@@ -78,20 +78,23 @@ nav a {
 
 /* ------ Partie Portrait Royaux ------ */
 .royal {
+    padding-top: 16px;
     display : flex ;
-    flex-direction: column;
-    align-content: center;
-}
-
-.royal.img{
-    max-width: 250px;
-    max-height: 350px;
-}
-
-.portrait, .titre{
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
+}
+
+
+.portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.portrait img{
+    max-width: 300px;
+    min-height: 400px;
+}
+.portrait h3{
+    padding-top: 16px;
 }
 
 
