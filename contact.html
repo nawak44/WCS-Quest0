@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le royaume de Gnochis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="texte de description">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" /> <!-- lien vers le document css -->
+    <scrip defer src="./script.js"></scrip> <!-- lien vers le document js -->
+</head>
+
+<body>
+    <header>
+        <img src="https://media.istockphoto.com/photos/cat-and-dog-sleeping-puppy-and-kitten-sleep-picture-id1168451046"
+            alt="image de Chat">
+        <nav>
+            <ul>
+                <li><a href="index.html" Home>Home</a></li>
+                <li><a href="family.html" Royal Family>Royal Family</a></li>
+                <li><a href="assets.html" Royal Assets>Royal Assets</a></li>
+                <li><a href="contact.html" Contact Us>Contact US</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="corps">
+        <h2>
+            Contact the Royal Kingdom
+        </h2>
+        <p id="texte_avant_form">
+            Fill in the form below to contact the Royal Kingdom
+        </p>
+        <div id="formulaire">
+            <form action="/page-traitement-donnees" method="post">
+                <div>
+                    <label for="nom">Name</label><br />
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required />
+                </div>
+                <div>
+                    <label for="email">Votre e-mail</label><br />
+                    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required />
+                </div>
+                <div>
+                    <label for="message">Votre message</label><br />
+                    <textarea id="message" name="message" rows="5" cols="42" placeholder="" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="bouton">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
