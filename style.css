@@ -28,23 +28,20 @@ header, img {
     max-width: 100%;
     max-height: 100%;
 }
-nav, ul{
-    display: flex;
-    width: 100%;
-}
 
 ul, li{
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
     font-size: 1em;
-    justify-content: space-around;
+    padding : 8px;
 }
 
 nav a {
     text-decoration: none;
 }
 /* ------ Corps Général ------ */
-.corps{
+/*.corps{
     padding: 5%;
 	display: flex;
 	flex-direction: column;
@@ -52,11 +49,11 @@ nav a {
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
-}
+}*/
 /* ------ page Index Acceuil ------ */
 
 .imageTitre {
-        font-size: 2em;
+    font-size: 2em;
     color: white;
     display: flex;
     align-items: center;
@@ -70,24 +67,34 @@ nav a {
 .aPropos{
     font-size: 3em;
     color: blue;
+    padding-bottom: 16px;
+    
 }
+.texteAvecTitre{
+    padding : 16px 32px ;
+}
+
 
 .texteAvecTitre{
 
 }
 
 /* ------ Partie Portrait Royaux ------ */
+.familleRoyalTitle{
+    margin : 16px 0px 0px 32px ;
+}
+
 .royal {
     padding-top: 16px;
     display : flex ;
     justify-content: space-around;
 }
 
-
 .portrait{
     display: flex;
     flex-direction: column;
     align-items: center;  
+    margin : 8px;
 }
 .portrait img{
     max-width: 300px;
@@ -100,15 +107,27 @@ nav a {
 
 
 /* ------ Partie Assets ------ */
+.assets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 32px;
+
+}
+.titreAssets{
+    margin-left: 0px;
+    
+}
 thead {
     background-color: lightgrey;
     font-size: 1.4 em;
     height: 30px;
+
 }
 table,td{
     padding : 0 ;
     border-collapse: collapse;
-    border : solid black 2px ;
+    border : solid black 1px ;
 }
 
 td{
@@ -116,6 +135,9 @@ td{
 }
 
 /* ------ Formulaire ------ */
+.formAvecTitre{
+    margin: 16px 32px 0px 32px;
+}
 #texte_avant_form {
     font-size: 1.6em;
   }
